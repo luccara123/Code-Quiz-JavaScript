@@ -4,54 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Scores link-->
-    <div class="scores">
-        <a href="scores.html"></a>
-    </div>
+    <div class="flex">
+        <div class="scores">
+            <a href="scores.html">View Highscores</a>
+        </div>
 
-    <!--Timer-->
-    <div class="timer">
-        <h3>Time: <span id =timeCountdown>0</span></h3>
+        <!--Timer-->
+        <div class="timer">
+            <h3>Time: <span id =timeCountdown>0</span></h3>
+        </div>
     </div>
 
     <!-- Header Content-->
-    <header>
         <div class="wrapper">
-            <article id="main" class="main-content">
-                <h1>
-                    Codding Quiz Challenge
-                </h1>
-                <p>
+            <header>
+                <article id="main" class="main-content"> 
+                    <h1>
+                    Codding Quiz <span class="h1-span">Challenge</span> 
+                    </h1>
+                    <p>
                     Try to answer the following code-related questions with the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
-                </p>
-                <button id="startQuiz">Start Quiz</button>
-            </article>
+                    </p>
+                    <button id="startQuiz">Start Quiz</button> 
+                </article>
+            </header>
+
+            <!--Hidden Questions container-->
+            <section id="questions-container" class="hidden"> 
+                <h2 class="question-title"></h2>
+                <div id="questionsChoices" class="choices"></div> 
+            </section>
+
+            <!--Final score container-->
+            <section id="finalScore" class="hidden"> 
+                <div>
+                    <h1>
+                        Everything done!
+                    </h1>
+                    <p>Your final score is <span id="final-score"></span>.</p>
+                    <p>
+                    Enter initials: <input type="text" id="initials" max="3" />
+                    <button id="submit">Submit</button>
+                    </p>
+                </div>
+            </section>
+
+            <!--Feedback-->
+            <div id="feedback" class="feedback hidden">
+                
+            </div>
+
         </div>
-    </header>
-
-    <!--Hidden Questions container-->
-    <section id="questions-container" class="hidden">
-        <h2 class="question-title"></h2>
-        <div id="questionsChoices" class="choices"></div>
-    </section>
-
-    <!--Final score container-->
-    <section id="finalScore" class="hidden">
-        <div>
-            <h1>
-                Everything done!
-            </h1>
-            <p>Your final score is <span id="final-score"></span>.</p>
-            <p>
-              Enter initials: <input type="text" id="initials" max="3" />
-              <button id="submit">Submit</button>
-            </p>
-        </div>
-    </section>
-
 </body>
 <script src="./assets/script.js"></script>
 </html>

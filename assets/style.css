@@ -1,0 +1,108 @@
+/*General styles*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: 'Turret Road', cursive; 
+}
+
+a {
+    color:#CC29FF;
+    text-decoration: none;
+    transition: color 0.1s;
+}
+  
+a:hover {
+    color: #DA71FB;
+}
+
+/*View Highscores and Timer*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+    color:#CC29FF
+ }
+ .scores {
+     padding-top: 20px;
+     padding-left: 20px;
+ }
+   
+ .timer {
+     padding-top: 20px;
+     padding-right: 20px;
+ }
+
+ /*Main content*/
+.wrapper {
+    margin: 150px auto 0 auto;
+    max-width: 550px;
+}
+
+.main-content {
+  text-align: center;
+}
+
+#main h1 {
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+  
+.h1-span {
+    color: #CC29FF;
+}
+
+#main p {
+    padding-bottom: 20px;;
+    font-size: 16px;
+}
+
+#startQuiz {
+    font-size: 18px;
+    padding: 5px;
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#startQuiz:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+
+/*Final score styles*/
+
+#finalScore h1{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+/*Submit button*/
+#submit {
+    background-color: #CC29FF;
+    color: #fff;
+    display: inline-block;
+    border: 0;
+    padding: 5px 20px;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 100%;
+    border-radius: 10px;
+    transition: background-color 0.4s;
+}
+  
+#submit:hover {
+    background-color: #DA71FB;
+}
+
+/*Initials input*/
+input[type="text"] {
+    font-size: 100%;
+}
+
+.hidden{
+    display: none;
+}
