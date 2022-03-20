@@ -127,7 +127,7 @@ var listQuestions = [
 
 // Quiz initial variables
 var currentQuestionIndex = 0;
-var time = listQuestions.length * 15;
+var time = listQuestions.length * 13;
 var timerId;
 
 function startQuiz(){
@@ -263,7 +263,7 @@ function saveHighscore(){
         window.localStorage.setItem("highscores", JSON.stringify(highscores)); //make it a string
 
         //Go to next page
-        window.location.href = "score.html";
+        window.location.href = "scores.html";
     }
 }
 
@@ -273,11 +273,11 @@ function checkForEnter(event) {
         saveHighscore();  
     }
 }
-submitBtn.addEventListener("click", saveHighscore);
-startQuizBtn.addEventListener("click", startQuiz)
-initialsEl.addEventListener("keyup", checkForEnter)
+
+submitBtn.onclick = saveHighscore;
+startQuizBtn.onclick = startQuiz;
+initialsEl.onkeyup = checkForEnter;
 
 
 
 
-  
