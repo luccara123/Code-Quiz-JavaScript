@@ -7,4 +7,4 @@ less than his current time to complete the challenge. After all the questions ar
 
 Live Website: https://luccara123.github.io/Code-Quiz-JavaScript/
 
-## Image: ![image](https://user-images.githubusercontent.com/78193249/159142347-849a6105-a5bb-4882-ad1a-5c8ddc948014.png)
+## Image: ![image](https://user-images.githubusercontent.com/78193249/159142452-2f44cea4-1028-4004-8abd-6708c8a73c97.png)
