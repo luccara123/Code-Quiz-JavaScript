@@ -8,6 +8,7 @@
 
 body{
   font-family: 'Turret Road', cursive; 
+  background-color: #333;
 }
 
 a {
@@ -48,6 +49,7 @@ a:hover {
 
 #main h1 {
     padding-bottom: 20px;
+    color: #fff;
     font-size: 35px;
 }
   
@@ -56,29 +58,34 @@ a:hover {
 }
 
 #main p {
+    color: #fff;
     padding-bottom: 20px;;
     font-size: 16px;
 }
 
 #startQuiz {
-    color: #333;
+    color: #fff;
     font-size: 18px;
     padding: 5px;
     background-color: transparent;
     text-transform: uppercase;
     cursor: pointer;
-    border: 1px solid #333
+    border: 1px solid #fff;
 }
 
+
 #startQuiz:hover {
-    color: #fff;
-    background-color: #333;
+    color: #333;
+    background-color: #fff;
 }
 
 .choices button{
     display: block;
 }
 /*Final score styles*/
+#finalScore{
+    color: #fff;
+}
 
 #finalScore h1{
     padding-bottom: 20px;
@@ -115,6 +122,7 @@ input[type="text"] {
 /*Scores page*/
 
 .highscores-title{
+    color: #fff;
     padding-bottom: 20px;
     font-size: 40px;
     text-transform: uppercase;
@@ -127,6 +135,7 @@ ol{
 }
   
 li{
+    color: #fff;
     padding: 5px;
     list-style: decimal inside none;
 }

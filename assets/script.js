@@ -127,7 +127,7 @@ var listQuestions = [
 
 // Quiz initial variables
 var currentQuestionIndex = 0;
-var time = listQuestions.length * 13;
+var time = listQuestions.length * 15;
 var timerId;
 
 function startQuiz(){
@@ -154,6 +154,7 @@ function getQuestion (){
     //Update question title with the current question
     var titleEl = document.querySelector(".question-title");
     titleEl.textContent = currentQuestion.question; 
+    titleEl.style.color = "white";
 
     //Remove any past question
     choicesEl.innerHTML ="";
@@ -162,6 +163,7 @@ function getQuestion (){
     currentQuestion.choices.forEach(function(choice, i){
         //create new button for each choice
         var choiceNode = document.createElement("button");
+        choiceNode.style.color ="white";
         choiceNode.setAttribute("class", "choice"); // adding attributes to the new button class = choice
         choiceNode.setAttribute("value", choice); // value = choice
 
@@ -182,10 +184,10 @@ function questionOnClick() {
     if (this.value !== listQuestions[currentQuestionIndex].answer){ // this refers to the array 
                                                                        // listQuestions.value(choice value not equal to the current answer)
         // less time
-            time -= 15; //time = time - 15
-        if (time < 0){
-            time = 0;
-        }
+            time -= 15; //time = time - 13
+    if (time < 0) {
+        time = 0;
+    }
 
         //display new time on page
         timerEl.textContent = time;
