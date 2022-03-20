@@ -61,11 +61,13 @@ a:hover {
 }
 
 #startQuiz {
+    color: #333;
     font-size: 18px;
     padding: 5px;
     background-color: transparent;
     text-transform: uppercase;
     cursor: pointer;
+    border: 1px solid #333
 }
 
 #startQuiz:hover {
@@ -73,7 +75,9 @@ a:hover {
     background-color: #333;
 }
 
-
+.choices button{
+    display: block;
+}
 /*Final score styles*/
 
 #finalScore h1{
@@ -81,9 +85,9 @@ a:hover {
     font-size: 30px;
 }
 /*Submit button*/
-#submit {
+button {
     background-color: #CC29FF;
-    color: #fff;
+    color: #333;
     display: inline-block;
     border: 0;
     padding: 5px 20px;
@@ -94,7 +98,7 @@ a:hover {
     transition: background-color 0.4s;
 }
   
-#submit:hover {
+button:hover {
     background-color: #DA71FB;
 }
 
